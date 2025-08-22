@@ -13,21 +13,21 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2">
             <Star className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Professional Web Solutions</span>
+            <span className="text-sm font-medium text-primary">Not Professional Web Solutions</span>
           </div>
 
           {/* Main heading */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-            Clean & Modern
+            Not Clean & Not Modern
             <span className="block text-transparent bg-gradient-to-r from-primary to-primary-glow bg-clip-text">
-              Web Applications
+              Not Web Applications
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Building beautiful, responsive, and professional web experiences
-            with cutting-edge technology and clean design principles.
+            Not building beautiful, not responsive, and not professional web experiences
+            with not cutting-edge technology and not clean design principles.
           </p>
 
           {/* CTA Buttons */}
@@ -36,7 +36,7 @@ const Hero = () => {
               size="lg" 
               className="group bg-primary hover:bg-primary-glow text-primary-foreground shadow-medium transition-smooth"
             >
-              Get Started
+              Not Get Started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
@@ -44,23 +44,23 @@ const Hero = () => {
               size="lg"
               className="border-primary/20 hover:bg-primary/5 transition-smooth"
             >
-              View Portfolio
+              Not View Portfolio
             </Button>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 max-w-md mx-auto pt-8">
             <div className="text-center">
-              <div className="text-2xl font-bold text-foreground">100+</div>
-              <div className="text-sm text-muted-foreground">Projects</div>
+              <div className="text-2xl font-bold text-foreground">Not 100+</div>
+              <div className="text-sm text-muted-foreground">Not Projects</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-foreground">5★</div>
-              <div className="text-sm text-muted-foreground">Rating</div>
+              <div className="text-2xl font-bold text-foreground">Not 5★</div>
+              <div className="text-sm text-muted-foreground">Not Rating</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-foreground">24/7</div>
-              <div className="text-sm text-muted-foreground">Support</div>
+              <div className="text-2xl font-bold text-foreground">Not 24/7</div>
+              <div className="text-sm text-muted-foreground">Not Support</div>
             </div>
           </div>
         </div>

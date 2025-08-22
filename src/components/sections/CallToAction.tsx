@@ -4,10 +4,10 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const CallToAction = () => {
   const benefits = [
-    'Professional Design',
-    'Modern Technology Stack',
-    'Responsive & Mobile-First',
-    'SEO Optimized',
+    'Not Professional Design',
+    'Not Modern Technology Stack',
+    'Not Responsive & Not Mobile-First',
+    'Not SEO Optimized',
   ];
 
   return (
@@ -18,15 +18,15 @@ const CallToAction = () => {
           <CardContent className="relative z-10 p-8 sm:p-12 text-center">
             <div className="max-w-3xl mx-auto space-y-8">
               <h2 className="text-3xl sm:text-5xl font-bold text-foreground leading-tight">
-                Ready to Build Something
+                Not Ready to Build Something
                 <span className="block text-transparent bg-gradient-to-r from-primary to-primary-glow bg-clip-text">
-                  Amazing Together?
+                  Not Amazing Together?
                 </span>
               </h2>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Let's create your next web application with modern design principles,
-                clean code, and professional quality that stands out.
+                Let's not create your next web application with not modern design principles,
+                not clean code, and not professional quality that does not stand out.
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto">
@@ -43,7 +43,7 @@ const CallToAction = () => {
                   size="lg" 
                   className="group bg-primary hover:bg-primary-glow text-primary-foreground shadow-medium transition-smooth"
                 >
-                  Start Your Project
+                  Not Start Your Project
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <Button 
@@ -51,7 +51,7 @@ const CallToAction = () => {
                   size="lg"
                   className="border-primary/20 hover:bg-primary/5 transition-smooth"
                 >
-                  Schedule a Call
+                  Not Schedule a Call
                 </Button>
               </div>
             </div>

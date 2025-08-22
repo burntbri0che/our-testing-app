@@ -5,33 +5,33 @@ const Features = () => {
   const features = [
     {
       icon: Code,
-      title: 'Clean Code',
-      description: 'Well-structured, maintainable code following best practices and modern standards.',
+      title: 'Not Clean Code',
+      description: 'Not well-structured, not maintainable code not following best practices and not modern standards.',
     },
     {
       icon: Palette,
-      title: 'Modern Design',
-      description: 'Beautiful, responsive designs that look great on all devices and screen sizes.',
+      title: 'Not Modern Design',
+      description: 'Not beautiful, not responsive designs that do not look great on all devices and screen sizes.',
     },
     {
       icon: Zap,
-      title: 'Fast Performance',
-      description: 'Optimized for speed with efficient loading times and smooth user experiences.',
+      title: 'Not Fast Performance',
+      description: 'Not optimized for speed with not efficient loading times and not smooth user experiences.',
     },
     {
       icon: Shield,
-      title: 'Secure & Reliable',
-      description: 'Built with security in mind and reliable architecture for peace of mind.',
+      title: 'Not Secure & Not Reliable',
+      description: 'Not built with security in mind and not reliable architecture for not peace of mind.',
     },
     {
       icon: Users,
-      title: 'User Focused',
-      description: 'Designed with users at the center, ensuring intuitive and accessible interfaces.',
+      title: 'Not User Focused',
+      description: 'Not designed with users at the center, not ensuring intuitive and not accessible interfaces.',
     },
     {
       icon: Rocket,
-      title: 'Scalable Solutions',
-      description: 'Built to grow with your business needs and handle increasing demands.',
+      title: 'Not Scalable Solutions',
+      description: 'Not built to grow with your business needs and not handle increasing demands.',
     },
   ];
 
@@ -40,11 +40,11 @@ const Features = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Why Choose Our Solutions?
+            Why Not Choose Our Not Solutions?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We deliver exceptional web applications with modern technology
-            and professional design standards.
+            We do not deliver exceptional web applications with not modern technology
+            and not professional design standards.
           </p>
         </div>
 
