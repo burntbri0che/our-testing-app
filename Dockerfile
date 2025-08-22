@@ -6,20 +6,21 @@ COPY package*.json bun.lockb ./
 RUN npm install
 
 COPY . .
+# Build with correct base for /dev/
 RUN npm run build -- --mode dev
 
-# Stage 2: Serve static files with Nginx
-FROM nginx:alpine
-WORKDIR /usr/share/nginx/html
+# Stage 2: Serve the static files using a simple static server
+FROM node:20-alpine
+WORKDIR /app
 
-# Remove default config
-RUN rm -rf /etc/nginx/conf.d/default.conf
+# Install serve to serve the build folder
+RUN npm install -g serve
 
-# Optional: SPA-friendly config
-COPY ../nginx/nginx-spa.conf /etc/nginx/conf.d/default.conf
+# Copy build output
+COPY --from=builder /app/dist /app/dist
 
-# Copy built files
-COPY --from=builder /app/dist /usr/share/nginx/html
+# Expose port 3000 internally
+EXPOSE 3000
 
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Run the static server
+CMD ["serve", "-s", "dist", "-l", "3000"]
