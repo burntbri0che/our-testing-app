@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Github, Twitter, Linkedin, Rocket, Satellite, Planet } from 'lucide-react';
+import { Github, Twitter, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
-                <Rocket className="w-5 h-5 text-primary-foreground" />
+                <span className="text-primary-foreground font-bold text-sm">CE</span>
               </div>
               <span className="font-bold text-xl text-foreground">CosmosExplorer</span>
             </Link>

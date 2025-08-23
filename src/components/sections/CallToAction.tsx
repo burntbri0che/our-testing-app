@@ -1,4 +1,4 @@
-import { Anchor, Waves, Fish } from 'lucide-react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -32,7 +32,7 @@ const CallToAction = () => {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-2">
-                    <Waves className="w-5 h-5 text-primary flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
                     <span className="text-sm font-medium text-foreground">{benefit}</span>
                   </div>
                 ))}
@@ -44,7 +44,7 @@ const CallToAction = () => {
                   className="group bg-primary hover:bg-primary-glow text-primary-foreground shadow-medium transition-smooth"
                 >
                   Start Diving
-                  <Fish className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <Button 
                   variant="outline" 

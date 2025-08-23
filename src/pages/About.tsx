@@ -1,4 +1,4 @@
-import { Rocket, Target, Award, Lightbulb, Satellite, Astronaut } from 'lucide-react';
+import { Users, Target, Award, Lightbulb } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
@@ -9,7 +9,7 @@ const About = () => {
       description: 'We coordinate complex space operations with precision and expertise, ensuring every mission reaches its destination safely.',
     },
     {
-      icon: Rocket,
+      icon: Users,
       title: 'Space Pioneers',
       description: 'Our team leads the way in space exploration, pushing the boundaries of what\'s possible in the cosmos.',
     },
@@ -94,7 +94,7 @@ const About = () => {
               <div className="aspect-square rounded-2xl card-gradient shadow-strong p-8 flex items-center justify-center">
                 <div className="text-center space-y-4">
                   <div className="w-24 h-24 gradient-bg rounded-full flex items-center justify-center mx-auto">
-                    <Satellite className="w-12 h-12 text-primary-foreground" />
+                    <span className="text-4xl font-bold text-primary-foreground">CE</span>
                   </div>
                   <h3 className="text-2xl font-bold text-foreground">Space Technology</h3>
                   <p className="text-muted-foreground">
@@ -158,7 +158,6 @@ const About = () => {
             cosmic vision to life with cutting-edge space technology and expert mission planning.
           </p>
           <div className="inline-flex items-center space-x-2 bg-primary/10 border border-primary/20 rounded-full px-6 py-3">
-            <Astronaut className="w-5 h-5 text-primary" />
             <span className="text-primary font-medium">Contact us today to launch your mission</span>
           </div>
         </div>

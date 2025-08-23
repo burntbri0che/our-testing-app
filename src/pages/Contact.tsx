@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Satellite, Rocket, MapPin, Send, Astronaut, Planet } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -40,19 +40,19 @@ const Contact = () => {
 
   const contactInfo = [
     {
-      icon: Satellite,
+      icon: Mail,
       title: 'Mission Control',
       detail: 'mission@cosmosexplorer.com',
       description: 'Send us your space mission proposals',
     },
     {
-      icon: Rocket,
+      icon: Phone,
       title: 'Launch Pad',
       detail: '+1 (555) 321-4567',
       description: 'Call us during mission planning hours',
     },
     {
-      icon: Planet,
+      icon: MapPin,
       title: 'Space Station',
       detail: 'International Space Station',
       description: 'Visit our orbital headquarters',
@@ -165,7 +165,7 @@ const Contact = () => {
                         placeholder="Tell us about your space mission or cosmic inquiry..."
                         rows={6}
                         required
-                        className="transition-smooth focus:ring-2 focus:ring-primary/20"
+                        className="transition-smooth focus:2 focus:ring-primary/20"
                       />
                     </div>
 
@@ -179,7 +179,7 @@ const Contact = () => {
                       ) : (
                         <>
                           Launch Request
-                          <Rocket className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                          <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                         </>
                       )}
                     </Button>

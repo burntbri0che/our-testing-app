@@ -1,4 +1,4 @@
-import { Rocket, Star, Planet } from 'lucide-react';
+import { ArrowRight, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="space-y-8 animate-fade-in">
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2">
-            <Planet className="w-4 h-4 text-primary" />
+            <Star className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-primary">Intergalactic Space Missions</span>
           </div>
 
@@ -37,7 +37,7 @@ const Hero = () => {
               className="group bg-primary hover:bg-primary-glow text-primary-foreground shadow-medium transition-smooth"
             >
               Launch Mission
-              <Rocket className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
               variant="outline" 

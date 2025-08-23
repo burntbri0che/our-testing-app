@@ -1,35 +1,35 @@
-import { Sword, Shield, Wand, Crown, Dragon, Castle } from 'lucide-react';
+import { Code, Palette, Zap, Shield, Users, Rocket } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const Features = () => {
   const features = [
     {
-      icon: Sword,
+      icon: Code,
       title: 'Legendary Weapons',
       description: 'Wield ancient blades forged by master blacksmiths with mystical enchantments and legendary powers.',
     },
     {
-      icon: Shield,
+      icon: Palette,
       title: 'Magical Protection',
       description: 'Cast powerful spells and enchantments to protect yourself from dark forces and evil creatures.',
     },
     {
-      icon: Wand,
+      icon: Zap,
       title: 'Arcane Magic',
       description: 'Master the ancient arts of spellcasting and unlock the secrets of forgotten magical knowledge.',
     },
     {
-      icon: Crown,
+      icon: Shield,
       title: 'Royal Authority',
       description: 'Rule over vast kingdoms with wisdom and justice, commanding armies and making crucial decisions.',
     },
     {
-      icon: Dragon,
+      icon: Users,
       title: 'Mythical Companions',
       description: 'Befriend legendary creatures and form bonds with dragons, unicorns, and other magical beings.',
     },
     {
-      icon: Castle,
+      icon: Rocket,
       title: 'Epic Quests',
       description: 'Embark on dangerous adventures to save kingdoms, defeat villains, and restore peace to the realm.',
     },
