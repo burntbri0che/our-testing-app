@@ -6,10 +6,10 @@ COPY package*.json bun.lockb ./
 RUN npm install
 
 COPY . .
-# Build with correct base for /test/
-RUN npm run build
+# Build with base set to /
+RUN npm run build --mode production
 
-# Stage 2: Serve the static files using a simple static server
+# Stage 2: Serve the static files
 FROM node:20-alpine
 WORKDIR /app
 
