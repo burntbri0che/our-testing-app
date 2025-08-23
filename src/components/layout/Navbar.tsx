@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/hooks/use-theme';
+import { getAppMode, getAppTitle } from '@/lib/app-config';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +25,14 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">MW</span>
+              <span className="text-primary-foreground font-bold text-sm">OT</span>
             </div>
-            <span className="font-bold text-xl text-foreground">ModernWeb</span>
+            <span className="font-bold text-xl text-foreground">{getAppTitle()}</span>
+            {getAppMode() !== 'production' && (
+              <span className="text-xs px-2 py-1 bg-primary/20 text-primary rounded-full font-medium">
+                {getAppMode()}
+              </span>
+            )}
           </Link>
 
           {/* Desktop Navigation */}
