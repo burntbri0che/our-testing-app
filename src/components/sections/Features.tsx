@@ -1,37 +1,37 @@
-import { Code, Palette, Zap, Shield, Users, Rocket } from 'lucide-react';
+import { Sword, Shield, Wand, Crown, Dragon, Castle } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const Features = () => {
   const features = [
     {
-      icon: Code,
-      title: 'Not Clean Code',
-      description: 'Not well-structured, not maintainable code not following best practices and not modern standards.',
-    },
-    {
-      icon: Palette,
-      title: 'Not Modern Design',
-      description: 'Not beautiful, not responsive designs that do not look great on all devices and screen sizes.',
-    },
-    {
-      icon: Zap,
-      title: 'Not Fast Performance',
-      description: 'Not optimized for speed with not efficient loading times and not smooth user experiences.',
+      icon: Sword,
+      title: 'Legendary Weapons',
+      description: 'Wield ancient blades forged by master blacksmiths with mystical enchantments and legendary powers.',
     },
     {
       icon: Shield,
-      title: 'Not Secure & Not Reliable',
-      description: 'Not built with security in mind and not reliable architecture for not peace of mind.',
+      title: 'Magical Protection',
+      description: 'Cast powerful spells and enchantments to protect yourself from dark forces and evil creatures.',
     },
     {
-      icon: Users,
-      title: 'Not User Focused',
-      description: 'Not designed with users at the center, not ensuring intuitive and not accessible interfaces.',
+      icon: Wand,
+      title: 'Arcane Magic',
+      description: 'Master the ancient arts of spellcasting and unlock the secrets of forgotten magical knowledge.',
     },
     {
-      icon: Rocket,
-      title: 'Not Scalable Solutions',
-      description: 'Not built to grow with your business needs and not handle increasing demands.',
+      icon: Crown,
+      title: 'Royal Authority',
+      description: 'Rule over vast kingdoms with wisdom and justice, commanding armies and making crucial decisions.',
+    },
+    {
+      icon: Dragon,
+      title: 'Mythical Companions',
+      description: 'Befriend legendary creatures and form bonds with dragons, unicorns, and other magical beings.',
+    },
+    {
+      icon: Castle,
+      title: 'Epic Quests',
+      description: 'Embark on dangerous adventures to save kingdoms, defeat villains, and restore peace to the realm.',
     },
   ];
 
@@ -40,11 +40,11 @@ const Features = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Why Not Choose Our Not Solutions?
+            What Makes Our Fantasy World Special?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We do not deliver exceptional web applications with not modern technology
-            and not professional design standards.
+            Immerse yourself in a realm of magic, adventure, and epic quests where anything is possible
+            and legends come to life.
           </p>
         </div>
 

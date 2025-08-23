@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Github, Twitter, Linkedin } from 'lucide-react';
+import { Github, Twitter, Linkedin, Rocket, Satellite, Planet } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,27 +10,27 @@ const Footer = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">MW</span>
+                <Rocket className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="font-bold text-xl text-foreground">ModernWeb</span>
+              <span className="font-bold text-xl text-foreground">CosmosExplorer</span>
             </Link>
             <p className="text-muted-foreground text-sm">
-              Building beautiful, modern web experiences with clean design and professional quality.
+              Exploring the vast reaches of space with cutting-edge technology and cosmic innovation.
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Navigation</h3>
+            <h3 className="font-semibold text-foreground mb-4">Mission Control</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-muted-foreground hover:text-primary text-sm transition-smooth">
-                  Home
+                  Launch Pad
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="text-muted-foreground hover:text-primary text-sm transition-smooth">
-                  About
+                  Missions
                 </Link>
               </li>
               <li>
@@ -43,17 +43,17 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Services</h3>
+            <h3 className="font-semibold text-foreground mb-4">Space Services</h3>
             <ul className="space-y-2">
-              <li className="text-muted-foreground text-sm">Web Development</li>
-              <li className="text-muted-foreground text-sm">UI/UX Design</li>
-              <li className="text-muted-foreground text-sm">Consulting</li>
+              <li className="text-muted-foreground text-sm">Satellite Launch</li>
+              <li className="text-muted-foreground text-sm">Planetary Exploration</li>
+              <li className="text-muted-foreground text-sm">Cosmic Research</li>
             </ul>
           </div>
 
           {/* Social */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Connect</h3>
+            <h3 className="font-semibold text-foreground mb-4">Cosmic Network</h3>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-smooth">
                 <Github className="h-5 w-5" />
@@ -70,10 +70,10 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 ModernWeb. All rights reserved.
+            © 2024 CosmosExplorer. All cosmic rights reserved.
           </p>
           <p className="text-muted-foreground text-sm">
-            Built with React & Tailwind CSS
+            Powered by Space Technology & Cosmic Innovation
           </p>
         </div>
       </div>

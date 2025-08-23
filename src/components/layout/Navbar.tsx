@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { Menu, X, Moon, Sun, Rocket } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from '@/hooks/use-theme';
-import { getAppMode, getAppTitle } from '@/lib/app-config';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +11,7 @@ const Navbar = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
+    { name: 'Missions', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -25,14 +24,9 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">OT</span>
+              <Rocket className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-bold text-xl text-foreground">{getAppTitle()}</span>
-            {getAppMode() !== 'production' && (
-              <span className="text-xs px-2 py-1 bg-primary/20 text-primary rounded-full font-medium">
-                {getAppMode()}
-              </span>
-            )}
+            <span className="font-bold text-xl text-foreground">CosmosExplorer</span>
           </Link>
 
           {/* Desktop Navigation */}

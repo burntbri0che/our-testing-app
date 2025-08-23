@@ -1,13 +1,13 @@
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { Anchor, Waves, Fish } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 const CallToAction = () => {
   const benefits = [
-    'Not Professional Design',
-    'Not Modern Technology Stack',
-    'Not Responsive & Not Mobile-First',
-    'Not SEO Optimized',
+    'Deep Sea Discovery',
+    'Marine Life Research',
+    'Ocean Conservation',
+    'Underwater Photography',
   ];
 
   return (
@@ -18,21 +18,21 @@ const CallToAction = () => {
           <CardContent className="relative z-10 p-8 sm:p-12 text-center">
             <div className="max-w-3xl mx-auto space-y-8">
               <h2 className="text-3xl sm:text-5xl font-bold text-foreground leading-tight">
-                Not Ready to Build Something
+                Ready to Dive Into
                 <span className="block text-transparent bg-gradient-to-r from-primary to-primary-glow bg-clip-text">
-                  Not Amazing Together?
+                  Ocean Adventures?
                 </span>
               </h2>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Let's not create your next web application with not modern design principles,
-                not clean code, and not professional quality that does not stand out.
+                Join us in exploring the mysterious depths of the ocean, discovering new species,
+                and protecting our planet's most precious underwater ecosystems.
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                    <Waves className="w-5 h-5 text-primary flex-shrink-0" />
                     <span className="text-sm font-medium text-foreground">{benefit}</span>
                   </div>
                 ))}
@@ -43,15 +43,15 @@ const CallToAction = () => {
                   size="lg" 
                   className="group bg-primary hover:bg-primary-glow text-primary-foreground shadow-medium transition-smooth"
                 >
-                  Not Start Your Project
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  Start Diving
+                  <Fish className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <Button 
                   variant="outline" 
                   size="lg"
                   className="border-primary/20 hover:bg-primary/5 transition-smooth"
                 >
-                  Not Schedule a Call
+                  Book Expedition
                 </Button>
               </div>
             </div>

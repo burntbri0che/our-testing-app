@@ -1,4 +1,4 @@
-import { ArrowRight, Star } from 'lucide-react';
+import { Rocket, Star, Planet } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -12,22 +12,22 @@ const Hero = () => {
         <div className="space-y-8 animate-fade-in">
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2">
-            <Star className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Not Professional Web Solutions</span>
+            <Planet className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium text-primary">Intergalactic Space Missions</span>
           </div>
 
           {/* Main heading */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-            Not Clean & Not Modern
+            Explore the Cosmos
             <span className="block text-transparent bg-gradient-to-r from-primary to-primary-glow bg-clip-text">
-              Not Web Applications
+              Beyond the Stars
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Not building beautiful, not responsive, and not professional web experiences
-            with not cutting-edge technology and not clean design principles.
+            Embark on epic space adventures through distant galaxies, discover alien civilizations,
+            and unlock the mysteries of the universe with cutting-edge space technology.
           </p>
 
           {/* CTA Buttons */}
@@ -36,31 +36,31 @@ const Hero = () => {
               size="lg" 
               className="group bg-primary hover:bg-primary-glow text-primary-foreground shadow-medium transition-smooth"
             >
-              Not Get Started
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              Launch Mission
+              <Rocket className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
               variant="outline" 
               size="lg"
               className="border-primary/20 hover:bg-primary/5 transition-smooth"
             >
-              Not View Portfolio
+              Explore Planets
             </Button>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 max-w-md mx-auto pt-8">
             <div className="text-center">
-              <div className="text-2xl font-bold text-foreground">Not 100+</div>
-              <div className="text-sm text-muted-foreground">Not Projects</div>
+              <div className="text-2xl font-bold text-foreground">∞</div>
+              <div className="text-sm text-muted-foreground">Galaxies</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-foreground">Not 5★</div>
-              <div className="text-sm text-muted-foreground">Not Rating</div>
+              <div className="text-2xl font-bold text-foreground">🚀</div>
+              <div className="text-sm text-muted-foreground">Missions</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-foreground">Not 24/7</div>
-              <div className="text-sm text-muted-foreground">Not Support</div>
+              <div className="text-2xl font-bold text-foreground">🌌</div>
+              <div className="text-sm text-muted-foreground">Adventures</div>
             </div>
           </div>
         </div>

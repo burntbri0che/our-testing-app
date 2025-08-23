@@ -1,35 +1,35 @@
-import { Users, Target, Award, Lightbulb } from 'lucide-react';
+import { Rocket, Target, Award, Lightbulb, Satellite, Astronaut } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const About = () => {
   const values = [
     {
       icon: Target,
-      title: 'Mission Driven',
-      description: 'We focus on delivering exceptional web experiences that exceed expectations and drive real business results.',
+      title: 'Mission Control',
+      description: 'We coordinate complex space operations with precision and expertise, ensuring every mission reaches its destination safely.',
     },
     {
-      icon: Users,
-      title: 'Client Focused',
-      description: 'Our clients are at the heart of everything we do. We build lasting relationships through trust and quality.',
+      icon: Rocket,
+      title: 'Space Pioneers',
+      description: 'Our team leads the way in space exploration, pushing the boundaries of what\'s possible in the cosmos.',
     },
     {
       icon: Award,
-      title: 'Quality First',
-      description: 'We never compromise on quality. Every project is crafted with attention to detail and professional standards.',
+      title: 'Excellence in Space',
+      description: 'We maintain the highest standards in space technology and mission planning for optimal results.',
     },
     {
       icon: Lightbulb,
       title: 'Innovation',
-      description: 'We stay ahead of the curve with the latest technologies and design trends to deliver cutting-edge solutions.',
+      description: 'We constantly develop new technologies and approaches to advance humanity\'s presence in space.',
     },
   ];
 
   const stats = [
-    { number: '5+', label: 'Years Experience' },
-    { number: '100+', label: 'Projects Completed' },
-    { number: '50+', label: 'Happy Clients' },
-    { number: '99%', label: 'Success Rate' },
+    { number: '50+', label: 'Space Missions' },
+    { number: '1000+', label: 'Light Years Explored' },
+    { number: '25+', label: 'Planets Discovered' },
+    { number: '99.9%', label: 'Mission Success Rate' },
   ];
 
   return (
@@ -41,12 +41,12 @@ const About = () => {
             <h1 className="text-4xl sm:text-6xl font-bold text-foreground mb-6">
               About 
               <span className="text-transparent bg-gradient-to-r from-primary to-primary-glow bg-clip-text">
-                ModernWeb
+                CosmosExplorer
               </span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed mb-12">
-              We're passionate about creating beautiful, functional, and modern web applications 
-              that help businesses thrive in the digital world.
+              We\'re passionate about exploring the vast reaches of space, discovering new worlds,
+              and advancing humanity\'s understanding of the universe through cutting-edge technology.
             </p>
             
             {/* Stats */}
@@ -70,25 +70,22 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
-                Our Story
+                Our Space Story
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  ModernWeb was founded with a simple mission: to bridge the gap between 
-                  beautiful design and functional technology. We believe that every business 
-                  deserves a web presence that not only looks stunning but also performs 
-                  exceptionally.
+                  CosmosExplorer was founded with a bold mission: to make space exploration
+                  accessible to everyone and unlock the mysteries of the universe. We believe that
+                  humanity\'s future lies among the stars.
                 </p>
                 <p>
-                  Our team combines years of experience in web development, UI/UX design, 
-                  and digital strategy to deliver solutions that drive real results. We stay 
-                  at the forefront of technology trends while maintaining a focus on 
-                  timeless design principles.
+                  Our team combines decades of experience in aerospace engineering, astrophysics,
+                  and mission planning to deliver groundbreaking space missions. We stay at the
+                  forefront of space technology while maintaining our commitment to safety and innovation.
                 </p>
                 <p>
-                  From startups to established enterprises, we've helped businesses of all 
-                  sizes establish their digital presence and achieve their goals through 
-                  innovative web solutions.
+                  From launching satellites to planning Mars missions, we\'ve helped advance
+                  humanity\'s presence in space and discover new possibilities beyond Earth.
                 </p>
               </div>
             </div>
@@ -97,11 +94,11 @@ const About = () => {
               <div className="aspect-square rounded-2xl card-gradient shadow-strong p-8 flex items-center justify-center">
                 <div className="text-center space-y-4">
                   <div className="w-24 h-24 gradient-bg rounded-full flex items-center justify-center mx-auto">
-                    <span className="text-4xl font-bold text-primary-foreground">MW</span>
+                    <Satellite className="w-12 h-12 text-primary-foreground" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground">Modern Design</h3>
+                  <h3 className="text-2xl font-bold text-foreground">Space Technology</h3>
                   <p className="text-muted-foreground">
-                    Clean, professional, and timeless
+                    Advanced, reliable, and innovative
                   </p>
                 </div>
               </div>
@@ -115,11 +112,11 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-              Our Values
+              Our Mission Values
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              These core principles guide everything we do and ensure we deliver 
-              exceptional results for every client.
+              These core principles guide every space mission and ensure we deliver
+              exceptional results in the most challenging environment known to humanity.
             </p>
           </div>
 
@@ -154,14 +151,15 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Ready to Work Together?
+            Ready to Join the Space Mission?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            Let's discuss your project and see how we can help bring your vision to life 
-            with modern web technology and professional design.
+            Let\'s discuss your space exploration goals and see how we can help bring your
+            cosmic vision to life with cutting-edge space technology and expert mission planning.
           </p>
           <div className="inline-flex items-center space-x-2 bg-primary/10 border border-primary/20 rounded-full px-6 py-3">
-            <span className="text-primary font-medium">Contact us today to get started</span>
+            <Astronaut className="w-5 h-5 text-primary" />
+            <span className="text-primary font-medium">Contact us today to launch your mission</span>
           </div>
         </div>
       </section>
