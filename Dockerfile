@@ -7,7 +7,7 @@ RUN npm install
 
 COPY . .
 # Build with correct base for /test/
-RUN npm run build -- --mode test
+RUN npm run build
 
 # Stage 2: Serve the static files using a simple static server
 FROM node:20-alpine
