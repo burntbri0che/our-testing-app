@@ -7,7 +7,7 @@ RUN npm install
 
 COPY . .
 # Build with base set to /
-RUN npm run build --mode production
+RUN npm run build:production
 
 # Stage 2: Serve the static files
 FROM node:20-alpine
